@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainmenu-BGColor: #1992d4;
+    --card-strip-color: #f0b429;
+    --page-BGColor: #e2e8f0;
+}
+
+.container {
+    background-color: var(--page-BGColor);
+    display: grid;
+}
