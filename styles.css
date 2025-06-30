@@ -2,15 +2,56 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Zain', Helvetica, sans-serif;
 }
 
 :root {
     --mainmenu-BGColor: #1992d4;
     --card-strip-color: #f0b429;
     --page-BGColor: #e2e8f0;
+    --main-p: 20px;
+    --icon-width: 2rem;
 }
 
-.container {
+.icon {
+    width: var(--icon-width);
+}
+
+.main-container {
     background-color: var(--page-BGColor);
     display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas: 
+        "leftmenu header header"
+        "leftmenu card-area rightmenu";
+    background-color: var(--page-BGColor);
+    gap: 5px;
+    height: 100vh;
+    resize: horizontal;
+    overflow: auto;
+}
+
+.header {
+    grid-area: header;
+    background-color: white;
+    padding: var(--main-p);
+}
+
+.leftmenu {
+    grid-area: leftmenu;
+    background-color: var(--mainmenu-BGColor);
+    padding: var(--main-p);
+}
+
+.rightmenu {
+    grid-area: rightmenu;
+    background-color: orangered;    /*Change this later*/
+    padding: var(--main-p);
+}
+
+.card-area {
+    grid-area: card-area;
+    background-color: var(--page-BGColor);
+    padding: var(--main-p);
 }
