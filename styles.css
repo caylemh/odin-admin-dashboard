@@ -9,8 +9,27 @@
     --mainmenu-BGColor: #1992d4;
     --card-strip-color: #f0b429;
     --page-BGColor: #e2e8f0;
-    --main-p: 20px;
+    --main-pd: 20px;
     --icon-width: 2rem;
+    --lt-hover-color:  #4aafe6;
+}
+
+.leftmenu a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    line-height: 1;
+    padding: .5rem;
+    margin-top: 0.5rem;
+    gap: 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.leftmenu a:hover {
+    background-color: var(--lt-hover-color);
+    border-radius: .5rem;
+    transition: all 0.2s ease-in-out;
 }
 
 .icon {
@@ -35,23 +54,25 @@
 .header {
     grid-area: header;
     background-color: white;
-    padding: var(--main-p);
+    padding: var(--main-pd);
 }
 
 .leftmenu {
     grid-area: leftmenu;
     background-color: var(--mainmenu-BGColor);
-    padding: var(--main-p);
+    padding: var(--main-pd);
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
 }
 
 .rightmenu {
     grid-area: rightmenu;
     background-color: orangered;    /*Change this later*/
-    padding: var(--main-p);
+    padding: var(--main-pd);
 }
 
 .card-area {
     grid-area: card-area;
     background-color: var(--page-BGColor);
-    padding: var(--main-p);
+    padding: var(--main-pd);
 }
