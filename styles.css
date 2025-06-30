@@ -14,6 +14,8 @@
     --lt-hover-color:  #4aafe6;
 }
 
+/* Left Menu Elements */
+
 .leftmenu a {
     text-decoration: none;
     color: white;
@@ -35,6 +37,8 @@
 .icon {
     width: var(--icon-width);
 }
+
+/* Main Containers */
 
 .main-container {
     background-color: var(--page-BGColor);
