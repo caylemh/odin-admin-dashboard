@@ -12,6 +12,7 @@
     --main-pd: 20px;
     --icon-width: 2rem;
     --lt-hover-color:  #4aafe6;
+    --element-gaps: 1.2rem;
 }
 
 /* Left Menu Elements */
@@ -24,7 +25,7 @@
     line-height: 1;
     padding: .5rem;
     margin-top: 0.5rem;
-    gap: 1.2rem;
+    gap: var(--element-gaps);
     transition: all 0.2s ease-in-out;
 }
 
@@ -38,45 +39,143 @@
     width: var(--icon-width);
 }
 
+/* Header Elements */
+.row-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#search-bar {
+    display: flex;
+    height: 2rem;
+    width: 50%;
+    gap: var(--element-gaps);
+}
+
+#search-bar input {
+    font-size: 1.5rem;
+    width: 100%;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--page-BGColor);
+}
+
+#search-bar input:focus {
+    box-shadow: 2px 2px 10px rgb(126, 126, 126) inset;
+    border: 1px solid lightgray;
+}
+
+#notification-bar {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#notification-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+
+.row-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#user-welcome {
+    display: flex;
+    align-items: center;
+    gap: var(--element-gaps);
+    width: 50%;
+}
+
+#user-details h3 {
+    line-height: 1;
+}
+
+#user-details h1 {
+    line-height: 1;
+}
+
+#button-menu {
+    display: flex;
+    width: 50%;
+    gap: 2rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+}
+
+#button-menu button {
+    background-color: var(--mainmenu-BGColor);
+    font-size: 1.4rem;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+#button-menu button:hover {
+    background-color: white;
+    color: var(--mainmenu-BGColor);
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
 /* Main Containers */
 
 .main-container {
-    background-color: var(--page-BGColor);
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 0.8fr 3.5fr 1fr;
     grid-template-rows: 1fr 4fr;
     grid-template-areas: 
         "leftmenu header header"
         "leftmenu card-area rightmenu";
     background-color: var(--page-BGColor);
-    gap: 5px;
     height: 100vh;
-    resize: horizontal;
-    overflow: auto;
+    /* resize: horizontal;
+    overflow: auto; */
 }
 
 .header {
     grid-area: header;
     background-color: white;
-    padding: var(--main-pd);
+    padding: var(--main-pd) 50px;
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--element-gaps);
+    box-shadow: 2px 0 10px gray;
 }
 
 .leftmenu {
     grid-area: leftmenu;
     background-color: var(--mainmenu-BGColor);
     padding: var(--main-pd);
+    padding-left: 42px;
     display: grid;
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-rows: 0.8fr 4fr 1.5fr;
 }
 
 .rightmenu {
     grid-area: rightmenu;
-    background-color: orangered;    /*Change this later*/
     padding: var(--main-pd);
+    padding-right: 50px;
 }
 
 .card-area {
     grid-area: card-area;
-    background-color: var(--page-BGColor);
     padding: var(--main-pd);
 }
