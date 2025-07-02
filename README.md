@@ -21,8 +21,7 @@ This is a solution to the [Project: Admin Dashboard Solution from The ODIN Proje
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/responsive-qr-code-component-using-html-and-css-RAGkn5lzg](https://www.frontendmentor.io/solutions/responsive-qr-code-component-using-html-and-css-RAGkn5lzg)
-- Live Site URL: [https://caylemh.github.io/frontend-dev-qr-component/](https://caylemh.github.io/frontend-dev-qr-component/)
+- Live Site URL: [https://caylemh.github.io/odin-admin-dashboard/](https://caylemh.github.io/odin-admin-dashboard/)
 
 ## My process
 
