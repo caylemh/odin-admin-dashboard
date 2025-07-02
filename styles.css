@@ -146,11 +146,14 @@
 
 /* Right Menu */
 
+.card-container {
+    height: fit-content;
+}
+
 .card {
     background-color: var(--card-BG-color);
     padding: 0 20px;
     border-radius: var(--card-radius);
-    height:90%;
 }
 
 #card-announcement {
@@ -272,6 +275,7 @@
     padding-right: 50px;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    gap: var(--element-gaps);
 }
 
 .card-area {
