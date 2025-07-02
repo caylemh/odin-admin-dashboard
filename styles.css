@@ -241,7 +241,7 @@
         "leftmenu header header"
         "leftmenu card-area rightmenu";
     background-color: var(--page-BGColor);
-    height: 100vh;
+    height: 100%;
     /* resize: horizontal;
     overflow: auto; */
 }
