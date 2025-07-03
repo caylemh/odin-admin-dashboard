@@ -37,6 +37,7 @@ I first began with the HTML skeleton for the project and then proceeded to imple
 ### What I learned
 
 Using HTML, CSS Grid and Flexbox where applicable to create an efficient dashboard design. Responsive layout wil be ignored for the current project at this stage.
+- EDIT: In the end I did add some responsiveness. This was really an enjoyable project in the end! Looking forward to more.
 
 ### Continued development
 
